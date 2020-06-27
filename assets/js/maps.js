@@ -123,9 +123,9 @@ var acupunctureLocations = [
     ] ;
 
 var chiropractorLocations = [
-        ['Oranmore Chiropractors<br>\<a href="">Website</a>', 53.267884, -8.929697], //Oranmore Chiropractors
+        ['Oranmore Chiropractors<br>\<a href="http://www.oranmorechiro.ie/">Website</a>', 53.267884, -8.929697], //Oranmore Chiropractors
         ['Discover Chiropractic<br>\<a href="http://www.discoverchiropractic.ie/">Website</a>', 53.287045, -9.034367], // Discover Chiropractic
-        ['Galway City Chiropractic<br>\<a href="">Website</a>', 53.272954, -9.048940], // Galway City Chiropractic
+        ['Galway City Chiropractic<br>\<a href="http://www.galwaychiro.com/">Website</a>', 53.272954, -9.048940], // Galway City Chiropractic
         ['Salthill Osteopathic Clinic - Galway<br>\<a href="http://www.osteopathgalway.ie/">Website</a>', 53.261025, -9.077299], // Salthill Osteopathic Clinic - Galway
     ] ;
 
