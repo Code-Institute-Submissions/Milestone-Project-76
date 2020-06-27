@@ -85,40 +85,40 @@ var supplementLocations = [
     ] ;
 
 var physioLocations = [
-        ['Baily Point Physiotherapy<br>\<a href="">Website</a>', 53.259660, -9.077878], //Baily Point Physiotherapy
-        ['Galway West Physiotherapy<br>\<a href="">Website</a>', 53.268432, -9.062749], // Galway West Physiotherapy
-        ['Galway Bay Physio-Galway City Centre<br>\<a href="">Website</a>', 53.271860, -9.049521], // Galway Bay Physio- City Centre
-        ['Evidence-Based Therapy Centre<br>\<a href="">Website</a>', 53.274235, -9.045196], // Evidence-Based Therapy Centre
-        ['Galway City Physiotherapy<br>\<a href="">Website</a>', 53.286955, -9.034320], // Galway City Physiotherapy
-        ['Alliance Physiotherapy<br>\<a href="">Website</a>', 53.278312, -9.008287], // Alliance Physiotherapy
-        ['Galway Bay Physio-Oranmore<br>\<a href="">Website</a>', 53.271319, -8.918537], // Galway Bay Physio-Oranmore
+        ['Baily Point Physiotherapy<br>\<a href="http://www.galwayphysio.ie/">Website</a>', 53.259660, -9.077878], //Baily Point Physiotherapy
+        ['Galway West Physiotherapy<br>\<a href="http://www.galwaywestphysiotherapy.ie/">Website</a>', 53.268432, -9.062749], // Galway West Physiotherapy
+        ['Galway Bay Physio-Galway City Centre<br>\<a href="http://www.galwaybayphysio.ie/">Website</a>', 53.271860, -9.049521], // Galway Bay Physio- City Centre
+        ['Evidence-Based Therapy Centre<br>\<a href="http://www.ebtc.ie/">Website</a>', 53.274235, -9.045196], // Evidence-Based Therapy Centre
+        ['Galway City Physiotherapy<br>\<a href="http://www.galwaycityphysio.com/">Website</a>', 53.286955, -9.034320], // Galway City Physiotherapy
+        ['Alliance Physiotherapy<br>\<a href="http://alliancephysiotherapy.com/">Website</a>', 53.278312, -9.008287], // Alliance Physiotherapy
+        ['Galway Bay Physio-Oranmore<br>\<a href="http://www.galwaybayphysio.ie/">Website</a>', 53.271319, -8.918537], // Galway Bay Physio-Oranmore
     ] ;
 
 var massageLocations = [
-        ['Darren Macfarlane Physical Theraly Clinic<br>\<a href="">Website</a>', 53.268656, -9.064018], // Darren Macfarlane Physical Theraly Clinic
-        ['Galway Therapy Clinic<br>\<a href="">Website</a>', 53.271162, -9.056774], // Galway Therapy Clinic
-        ['Veras Bodywork & Massage<br>\<a href="">Website</a>', 53.270889, -9.053179], // Veras Bodywork & Massage
-        ['Massage Therapy Galway<br>\<a href="">Website</a>', 53.270919, -9.053191], //Massage Therapy Galway
-        ['Jerome Sports Massage<br>\<a href="">Website</a>', 53.289906, -9.047711], // Jerome Sports Massage
-        ['John Butler Sports Injury / Massage & Chartered Physiotherapist<br>\<a href="">Website</a>', 53.286569, -9.036048], // John Butler Sports Injury / Massage & Chartered Physiotherapist
-        ['Muscle Maintenance<br>\<a href="">Website</a>', 53.294049, -9.013728], // Muscle Maintenance
-        ['Peter Forde Physical Injury Therapy Clinic<br>\<a href="">Website</a>', 53.289204, -9.013362], // Peter Forde Physical Injury Therapy Clinic
-        ['Michelle Harte Physical Therapy Clinic<br>\<a href="">Website</a>', 53.267784, -8.930306], // Michelle Harte Physical Therapy Clinic
+        ['Darren Macfarlane Physical Theraly Clinic<br>\<a href="http://www.sportsinjurytherapy.ie/">Website</a>', 53.268656, -9.064018], // Darren Macfarlane Physical Theraly Clinic
+        ['Galway Therapy Clinic<br>\<a href="https://www.galwaytherapyclinic.net/">Website</a>', 53.271162, -9.056774], // Galway Therapy Clinic
+        ['Veras Bodywork & Massage<br>\<a href="https://business.facebook.com/vitalmassage.ie/">Website</a>', 53.270889, -9.053179], // Veras Bodywork & Massage
+        ['Massage Therapy Galway<br>\<a href="https://www.massagetherapygalway.com/">Website</a>', 53.270919, -9.053191], //Massage Therapy Galway
+        ['Jerome Sports Massage<br>\<a href="https://www.facebook.com/sports.massage.jerome">Website</a>', 53.289906, -9.047711], // Jerome Sports Massage
+        ['John Butler Sports Injury / Massage & Chartered Physiotherapist<br>\<a href="http://www.johnbutlersportsinjury.ie/">Website</a>', 53.286569, -9.036048], // John Butler Sports Injury / Massage & Chartered Physiotherapist
+        ['Muscle Maintenance<br>\<a href="https://www.facebook.com/Musclemaintenance-852225601538620/about/">Website</a>', 53.294049, -9.013728], // Muscle Maintenance
+        ['Peter Forde Physical Injury Therapy Clinic<br>\<a href="https://www.facebook.com/pfphysicalinjuryclinic/">Website</a>', 53.289204, -9.013362], // Peter Forde Physical Injury Therapy Clinic
+        ['Michelle Harte Physical Therapy Clinic<br>\<a href="http://mhphysicaltherapy.ie/">Website</a>', 53.267784, -8.930306], // Michelle Harte Physical Therapy Clinic
     ] ;
 
 var acupunctureLocations = [
-        ['Acupuncture 4 Life Clinic Galway<br>\<a href="">Website</a>', 53.251831, -9.152998], // Acupuncture 4 Life Clinic Galway
-        ['Chinese Medical Clinic<br>\<a href="">Website</a>', 53.268664, -9.066264], // Chinese Medical Clinic
-        ['Saffron Roche Acupuncture and Herb Clinic<br>\<a href="">Website</a>', 53.268087, -9.065817], // Saffron Roche Acupuncture and Herb Clinic
-        ['The Crane Clinic<br>\<a href="">Website</a>', 53.270262, -9.060270], // The Crane Clinic
-        ['Mill St Acupuncture & Health<br>\<a href="">Website</a>', 53.272749, -9.059041], // Mill St Acupuncture & Health
-        ['INDIKA Acupuncture & Allergy Clinic<br>\<a href="">Website</a>', 53.271474, -9.056618], // INDIKA Acupuncture & Allergy Clinic
-        ['Jane McHugh Acupuncture and Reflexology<br>\<a href="">Website</a>', 53.276781, -9.053223], // Jane McHugh Acupuncture and Reflexology
-        ['Denise Delaney Acupuncture and Health clinic<br>\<a href="">Website</a>', 53.284781, -9.044350], // Denise Delaney Acupuncture and Health clinic
-        ['Galway Holistic clinic Acupuncture/ Homeopathy/food Intolerance<br>\<a href="">Website</a>', 53.285454, -9.038389], // Galway Holistic clinic Acupuncture/ Homeopathy/food Intolerance
-        ['Harmony Acupuncture Clinic/ Linda Lyons<br>\<a href="">Website</a>', 53.284668, -9.036338], // Harmony Acupuncture Clinic/ Linda Lyons
-        ['Aran Acupuncture<br>\<a href="">Website</a>', 53.278669, -9.021456], // Aran Acupuncture
-        ['Oranmore Acupuncture Clinic<br>\<a href="">Website</a>', 53.273271, -8.929495], // Oranmore Acupuncture Clinic
+        ['Acupuncture 4 Life Clinic Galway<br>\<a href="http://www.acupuncture4life.ie/">Website</a>', 53.251831, -9.152998], // Acupuncture 4 Life Clinic Galway
+        ['Chinese Medical Clinic<br>\<a href="http://www.cmcgalway.com/">Website</a>', 53.268664, -9.066264], // Chinese Medical Clinic
+        ['Saffron Roche Acupuncture and Herb Clinic<br>\<a href="http://www.acupunctureandherbclinic.ie/">Website</a>', 53.268087, -9.065817], // Saffron Roche Acupuncture and Herb Clinic
+        ['The Crane Clinic<br>\<a href="http://www.acupuncturegalway.com/">Website</a>', 53.270262, -9.060270], // The Crane Clinic
+        ['Mill St Acupuncture & Health<br>\<a href="http://www.denisedelaneytherapy.com/">Website</a>', 53.272749, -9.059041], // Mill St Acupuncture & Health
+        ['INDIKA Acupuncture & Allergy Clinic<br>\<a href="http://www.indikahealth.ie/">Website</a>', 53.271474, -9.056618], // INDIKA Acupuncture & Allergy Clinic
+        ['Jane McHugh Acupuncture and Reflexology<br>\<a href="http://www.janemchugh.com/">Website</a>', 53.276781, -9.053223], // Jane McHugh Acupuncture and Reflexology
+        ['Denise Delaney Acupuncture and Health clinic<br>\<a href="http://www.galway-acupressure-and-health-clinic.com/">Website</a>', 53.284781, -9.044350], // Denise Delaney Acupuncture and Health clinic
+        ['Galway Holistic clinic Acupuncture/ Homeopathy/food Intolerance<br>\<a href="http://www.qanitanoonan.weebly.com/">Website</a>', 53.285454, -9.038389], // Galway Holistic clinic Acupuncture/ Homeopathy/food Intolerance
+        ['Harmony Acupuncture Clinic/ Linda Lyons<br>\<a href="http://www.harmonyacupuncturegalway.com/">Website</a>', 53.284668, -9.036338], // Harmony Acupuncture Clinic/ Linda Lyons
+        ['Aran Acupuncture<br>\<a href="http://www.aranacupuncture.ie/">Website</a>', 53.278669, -9.021456], // Aran Acupuncture
+        ['Oranmore Acupuncture Clinic<br>\<a href="http://www.oranmoreacupuncture.ie/">Website</a>', 53.273271, -8.929495], // Oranmore Acupuncture Clinic
 
     ] ;
 
