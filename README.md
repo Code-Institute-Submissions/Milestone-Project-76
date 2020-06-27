@@ -1,11 +1,12 @@
-<h1>GALFIT Website</h1)
-<h2>Milestone Project 2: Interactive Frontend Development</h2>
+<h1>Milestone Project 2: Interactive Frontend Development</h1>
 For this second milestone project, I decided to build this  website as an avid fitness enthusiast. I have always been into all things gym, nutrition and recuperation related and often google new activities, sources of nutrition and sports massage etc. in my area.
 I beleived a website where all these sources could be found at a glance would be useful for Galway City where I currently live.
 The Galway Fitness website or GALFIT as I've abrieviated it for this project, was designed for this purpose. A hub for all things fitness related.  
 
+https://github.com/Oulshtock/Milestone-Project-2
+
 <h2>UX</h2>
-My aim was to provide visitors with a simple to use website, easy to navigate menus and with a click to bring up all the locations of the health activity of their choice. 
+My aim was to provide visitors with a simple to use website. Easy to navigate menus and with a click to bring up all the locations of the health activity of their choice. 
 Below the navigation bar I positioned the map taking up the full page. The idea to add an embedded webpage next to the map that would open the website of that activity was planned but due to time constraints was pulled.
 
 I also added an infowindow to the markers on the map. Therefore, when a user clicks on a marker at their prefered location an infowindow pops up with the name of the company and a link to their website they can click on. As mentioned above this was meant to appear embedded
@@ -50,6 +51,12 @@ Other tehnologies used:
 - As it was planned as a one page simple to navigate website, all content can be found on the one page.
 - Font Awesome icons are used to provide links to social accounts.
 
+<h2>Features left to Implement</h2>
+
+- use google places API to suggest matches on lodging choice via [nearby](https://developers.google.com/maps/documentation/javascript/places?utm_source=google&utm_medium=cpc&utm_campaign=FY18-Q2-global-demandgen-paidsearchonnetworkhouseads-cs-maps_contactsal_saf&utm_content=text-ad-none-none-DEV_c-CRE_315916118099-ADGP_Hybrid+%7C+AW+SEM+%7C+SKWS+~+Nearby+Search-KWID_43700039136946351-kwd-582432942915-userloc_9028759&utm_term=KW_%2Bnearby%20%2Bsearch-ST_%2Bnearby+%2Bsearch&gclid=EAIaIQobChMI8IKMxKaW5gIVj8DACh1GrQ6WEAAYASAAEgLKjvD_BwE#place_search_requests)
+- migrate constants into database to reduce duplicate destinations
+- store images in database to reduce hits to google API and refresh weekly
+- use google api to determine places to see and use database to cache results for a week
 
 <h2>User Stories</h2>
 
@@ -68,6 +75,7 @@ The code was checked with the following validators
 - [W3CMarkupValidator](https://validator.w3.org)
 - [W3CJigsawCSSValidator](https://jigsaw.w3.org/css-validator/)
 - [Autoprefixer](https://autoprefixer.github.io/)
+- [JavaScript Validator](http://beautifytools.com/javascript-validator.php)
 
 The project was developed with the constant use of Chrome Developer Tools in order to ensure responsivness on all devices. 
 

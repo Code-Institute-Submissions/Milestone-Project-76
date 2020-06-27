@@ -2,95 +2,55 @@
 <html lang="en">
 
 <head>
-  <title>GALFIT</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
-  <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet"> 
-</head>
+	<title>GALFIT</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="stylesheet" href="assets/css/main.css" type="text/css" />
+	<link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet"> </head>
 
 <body>
-
- 
-     <div class="jumbotron text-center" style="margin-bottom:0">
-      <h1>Galways Fitness Finder</h1>
-      <p>Galway Citys location of everything Fitness, Food & Recuperation</p> 
-     </div>
- 
-  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-    <a class="navbar-brand" href="/index.html">GALFIT</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-     <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="gymDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	<div class="jumbotron text-center" style="margin-bottom:0">
+		<h1>Galways Fitness Finder</h1>
+		<p>Galway Citys location of everything Fitness, Food & Recuperation</p>
+	</div>
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark"> <a class="navbar-brand" href="/index.html">GALFIT</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span class="navbar-toggler-icon"></span> </button>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+				<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="gymDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Gym
         </a>
-        <div class="dropdown-menu" aria-labelledby="gymDropdown">
-          <a class="dropdown-item" onclick="showLocation(bodybuildingLocations)">Bodybuilding</a>
-          <a class="dropdown-item" onclick="showLocation(martialartsLocations)">Martial Arts</a>
-          <a class="dropdown-item" onclick="showLocation(swimmingLocations)">Swimming</a>
-          <a class="dropdown-item" onclick="showLocation(racketsportLocations)">Racket Sports</a>
-          <a class="dropdown-item" onclick="showLocation(yogaLocations)">Yoga</a>
-        </div>
-      </li>
-       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="nutritionDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<div class="dropdown-menu" aria-labelledby="gymDropdown"> <a class="dropdown-item" onclick="showLocation(bodybuildingLocations)">Bodybuilding</a> <a class="dropdown-item" onclick="showLocation(martialartsLocations)">Martial Arts</a> <a class="dropdown-item" onclick="showLocation(swimmingLocations)">Swimming</a> <a class="dropdown-item" onclick="showLocation(racketsportLocations)">Racket Sports</a> <a class="dropdown-item" onclick="showLocation(yogaLocations)">Yoga</a> </div>
+				</li>
+				<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="nutritionDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Nutrition
         </a>
-        <div class="dropdown-menu" aria-labelledby="nutritionDropdown">
-          <a class="dropdown-item" onclick="showLocation(mealLocations)">Fitness Meals</a>
-          <a class="dropdown-item" onclick="showLocation(dietLocations)">Dieticians</a>
-          <a class="dropdown-item" onclick="showLocation(supplementLocations)">Supplement Stores</a>
-        </div>
-      </li>
-        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="recupeDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Physio
+					<div class="dropdown-menu" aria-labelledby="nutritionDropdown"> <a class="dropdown-item" onclick="showLocation(mealLocations)">Fitness Meals</a> <a class="dropdown-item" onclick="showLocation(dietLocations)">Dieticians</a> <a class="dropdown-item" onclick="showLocation(supplementLocations)">Supplement Stores</a> </div>
+				</li>
+				<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="recupeDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Recuperation
         </a>
-        <div class="dropdown-menu" aria-labelledby="recupeDropdown">
-          <a class="dropdown-item" onclick="showLocation(physioLocations)">Physiotherapy</a>
-          <a class="dropdown-item" onclick="showLocation(massageLocations)">Sports Massage</a>
-          <a class="dropdown-item" onclick="showLocation(acupunctureLocations)">Acupuncture</a>
-          <a class="dropdown-item" onclick="showLocation(chiropractorLocations)">Chiropractors</a>
-        </div>
-      </li>
-      </ul>
-    </div>
-  </nav>
-
- <div id="map" > </div>
-
-
-
-
-
-<footer>
-        <div class="jumbotron text-center" style="margin-bottom:0">
-            <a rel="noopener" href="#" aria-label="Check out our Facebook page" target="_blank"><i class="fab fa-facebook fa-3x "></i></a>
-            <a href="#"><i class="fab fa-instagram fa-3x" aria-label="Check out our Instagram page"></i></a>
-            <a rel="noopener" href="#" aria-label="Check out our Snapchat" target="_blank"><i class="fab fa-snapchat-square fa-3x"></i></a>
-            <a rel="noopener" href="#" aria-label="Follow us on Twitter" target="_blank"><i class="fab fa-twitter-square fa-3x"></i></a>
-        </div>
-</footer>
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-<script src="assets/js/maps.js"></script>
-<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChTlhytXYgJF8PGx4OSTkI5DGHGjOqdoY&callback=initMap"></script>
-<script src="https://kit.fontawesome.com/89bab4cfa2.js"></script>
-
+					<div class="dropdown-menu" aria-labelledby="recupeDropdown"> <a class="dropdown-item" onclick="showLocation(physioLocations)">Physiotherapy</a> <a class="dropdown-item" onclick="showLocation(massageLocations)">Sports Massage</a> <a class="dropdown-item" onclick="showLocation(acupunctureLocations)">Acupuncture</a> <a class="dropdown-item" onclick="showLocation(chiropractorLocations)">Chiropractors</a> </div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div id="map"> </div>
+	<footer>
+		<div class="jumbotron text-center" style="margin-bottom:0"> <a rel="noopener" href="#" aria-label="Check out our Facebook page" target="_blank"><i class="fab fa-facebook fa-3x "></i></a> <a href="#"><i class="fab fa-instagram fa-3x" aria-label="Check out our Instagram page"></i></a> <a rel="noopener" href="#" aria-label="Check out our Snapchat" target="_blank"><i class="fab fa-snapchat-square fa-3x"></i></a> <a rel="noopener" href="#" aria-label="Follow us on Twitter" target="_blank"><i class="fab fa-twitter-square fa-3x"></i></a> </div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="assets/js/maps.js"></script>
+	<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChTlhytXYgJF8PGx4OSTkI5DGHGjOqdoY&callback=initMap"></script>
+	<script src="https://kit.fontawesome.com/89bab4cfa2.js"></script>
 </body>
 
 </html>
