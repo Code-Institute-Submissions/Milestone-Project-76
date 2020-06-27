@@ -5,7 +5,7 @@ I beleived a website where all these sources could be found at a glance would be
 The Galway Fitness website or GALFIT as I've abrieviated it for this project, was designed for this purpose. A hub for all things fitness related.  
 
 <h2>UX</h2>
-My aim was to provide visitors with a simple to use website. Easy to navigate menus and with a click to bring up all the locations of the health activity of their choice. 
+My aim was to provide visitors with a simple to use website, easy to navigate menus and with a click to bring up all the locations of the health activity of their choice. 
 Below the navigation bar I positioned the map taking up the full page. The idea to add an embedded webpage next to the map that would open the website of that activity was planned but due to time constraints was pulled.
 
 I also added an infowindow to the markers on the map. Therefore, when a user clicks on a marker at their prefered location an infowindow pops up with the name of the company and a link to their website they can click on. As mentioned above this was meant to appear embedded

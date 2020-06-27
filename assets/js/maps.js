@@ -95,29 +95,41 @@ var physioLocations = [
     ] ;
 
 var massageLocations = [
-        ['Darren Macfarlane Physical Theraly Clinic<br>\<a href="">Website</a>', 53.268656, -9.064018], //
-        ['Galway Therapy Clinic<br>\<a href="">Website</a>', 53.271162, -9.056774], // 
-        ['Veras Bodywork & Massage<br>\<a href="">Website</a>', 53.270889, -9.053179], // 
-        ['Massage Therapy Galway<br>\<a href="">Website</a>', 53.270919, -9.053191], //
-        ['Jerome Sports Massage<br>\<a href="">Website</a>', 53.289906, -9.047711], // 
-        ['John Butler Sports Injury / Massage & Chartered Physiotherapist<br>\<a href="">Website</a>', 53.286569, -9.036048], // 
+        ['Darren Macfarlane Physical Theraly Clinic<br>\<a href="">Website</a>', 53.268656, -9.064018], // Darren Macfarlane Physical Theraly Clinic
+        ['Galway Therapy Clinic<br>\<a href="">Website</a>', 53.271162, -9.056774], // Galway Therapy Clinic
+        ['Veras Bodywork & Massage<br>\<a href="">Website</a>', 53.270889, -9.053179], // Veras Bodywork & Massage
+        ['Massage Therapy Galway<br>\<a href="">Website</a>', 53.270919, -9.053191], //Massage Therapy Galway
+        ['Jerome Sports Massage<br>\<a href="">Website</a>', 53.289906, -9.047711], // Jerome Sports Massage
+        ['John Butler Sports Injury / Massage & Chartered Physiotherapist<br>\<a href="">Website</a>', 53.286569, -9.036048], // John Butler Sports Injury / Massage & Chartered Physiotherapist
         ['Muscle Maintenance<br>\<a href="">Website</a>', 53.294049, -9.013728], // Muscle Maintenance
-        ['Peter Forde Physical Injury Therapy Clinic<br>\<a href="">Website</a>', 53.289204, -9.013362], // 
+        ['Peter Forde Physical Injury Therapy Clinic<br>\<a href="">Website</a>', 53.289204, -9.013362], // Peter Forde Physical Injury Therapy Clinic
+        ['Michelle Harte Physical Therapy Clinic<br>\<a href="">Website</a>', 53.267784, -8.930306], // Michelle Harte Physical Therapy Clinic
     ] ;
 
 var acupunctureLocations = [
-        ['<br>\<a href="">Website</a>', 53.235806, -8.87177], //
-        ['<br>\<a href="">Website</a>', 53.278211, -6.220271], // 
-        ['<br>\<a href="">Website</a>', 53.293254, -9.015161], // 
-        ['<br>\<a href="">Website</a>', 53.293060, -9.013989], // 
+        ['Acupuncture 4 Life Clinic Galway<br>\<a href="">Website</a>', 53.251831, -9.152998], // Acupuncture 4 Life Clinic Galway
+        ['Chinese Medical Clinic<br>\<a href="">Website</a>', 53.268664, -9.066264], // Chinese Medical Clinic
+        ['Saffron Roche Acupuncture and Herb Clinic<br>\<a href="">Website</a>', 53.268087, -9.065817], // Saffron Roche Acupuncture and Herb Clinic
+        ['The Crane Clinic<br>\<a href="">Website</a>', 53.270262, -9.060270], // The Crane Clinic
+        ['Mill St Acupuncture & Health<br>\<a href="">Website</a>', 53.272749, -9.059041], // Mill St Acupuncture & Health
+        ['INDIKA Acupuncture & Allergy Clinic<br>\<a href="">Website</a>', 53.271474, -9.056618], // INDIKA Acupuncture & Allergy Clinic
+        ['Jane McHugh Acupuncture and Reflexology<br>\<a href="">Website</a>', 53.276781, -9.053223], // Jane McHugh Acupuncture and Reflexology
+        ['Denise Delaney Acupuncture and Health clinic<br>\<a href="">Website</a>', 53.284781, -9.044350], // Denise Delaney Acupuncture and Health clinic
+        ['Galway Holistic clinic Acupuncture/ Homeopathy/food Intolerance<br>\<a href="">Website</a>', 53.285454, -9.038389], // Galway Holistic clinic Acupuncture/ Homeopathy/food Intolerance
+        ['Harmony Acupuncture Clinic/ Linda Lyons<br>\<a href="">Website</a>', 53.284668, -9.036338], // Harmony Acupuncture Clinic/ Linda Lyons
+        ['Aran Acupuncture<br>\<a href="">Website</a>', 53.278669, -9.021456], // Aran Acupuncture
+        ['Oranmore Acupuncture Clinic<br>\<a href="">Website</a>', 53.273271, -8.929495], // Oranmore Acupuncture Clinic
+
     ] ;
 
 var chiropractorLocations = [
-        ['<br>\<a href="">Website</a>', 53.235806, -8.87177], //
-        ['<br>\<a href="">Website</a>', 53.278211, -6.220271], // 
-        ['<br>\<a href="">Website</a>', 53.293254, -9.015161], // 
-        ['<br>\<a href="">Website</a>', 53.293060, -9.013989], // 
+        ['Oranmore Chiropractors<br>\<a href="">Website</a>', 53.267884, -8.929697], //Oranmore Chiropractors
+        ['Discover Chiropractic<br>\<a href="http://www.discoverchiropractic.ie/">Website</a>', 53.287045, -9.034367], // Discover Chiropractic
+        ['Galway City Chiropractic<br>\<a href="">Website</a>', 53.272954, -9.048940], // Galway City Chiropractic
+        ['Salthill Osteopathic Clinic - Galway<br>\<a href="http://www.osteopathgalway.ie/">Website</a>', 53.261025, -9.077299], // Salthill Osteopathic Clinic - Galway
     ] ;
+
+
 function showLocation(locations) {
   var map = new google.maps.Map(document.getElementById("map"), {
         zoom: 12,
