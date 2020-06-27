@@ -8,230 +8,117 @@ function initMap() {
     });
 }
 
-function bodybuilding() {
-    var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 12,
-        center: {
-            lat: 53.269172, 
-            lng: -9.080368
-        }
-    });
-
-   var locations = [
-        {lat: 53.269172, lng: -9.080368}, //Ardilaun
-        {lat: 53.281736, lng: -9.063121}, // Kingfisher
-        {lat: 53.269550, lng: -9.108248}, // NRG Knocknacarra
-        {lat: 53.274647, lng: -9.046547}, // Push Gym
-        {lat: 53.275899, lng: -9.048771}, // Snap Fitness
-        {lat: 53.281729, lng: -9.041727}, // NRG Bohermore
-        {lat: 53.279675, lng: -9.021446}, // Active 24 Fitness
-        {lat: 53.283221, lng: -9.035437}, // Galway City Gym
+var bodybuildingLocations = [
+        ['Ardilaun<br>\<a href="www.ardilaunleisureclub.ie/">Website</a>', 53.269172, -9.080368], // Ardilaun
+        ['Kingfisher<br>\<a href="https://nuigalway.kingfisherclub.com/">Website</a>', 53.281736, -9.063121], // Kingfisher
+        ['NRG Knocknacarra<br>\<a href="https://www.nrgfitness.ie/knocknacarra/">Website</a>', 53.269550, -9.108248], // NRG Knocknacarra
+        ['Push Gym<br>\<a href="https://pushgym.ie/">Website</a>', 53.274647, -9.046547], // Push Gym
+        ['Snap Fitness<br>\<a href="https://www.snapfitness.com/ie/gyms/galway/">Website</a>', 53.275899, -9.048771], // Snap Fitness
+        ['NRG Bohermore<br>\<a href="https://www.nrgfitness.ie/locations/bohermore/">Website</a>', 53.281729, -9.041727], // NRG Bohermore
+        ['Active 24 Fitness<br>\<a href="https://activefitness.ie/">Website</a>', 53.279675, -9.021446], // Active 24 Fitness
+        ['Galway City Gym<br>\<a href="https://galwaycitygym.ie/">Website</a>', 53.283221, -9.035437], // Galway City Gym
     ] ;
 
-   var markers = locations.map(function(location) {
-        return new google.maps.Marker({
-            animation: google.maps.Animation.DROP,
-            position: location
-            
-            
-        });
-    });
+var martialartsLocations = [
+        ['Kyokushinkai<br>\<a href="http://www.kyokushinireland.com/galway.html">Website</a>', 53.264804, -9.083411], // Kyokushinkai
+        ['Galway Judo Club<br>\<a href="http://galwayjudoclub.ie/">Website</a>', 53.267221, -9.055337], // Galway Judo Club
+        ['Itosu kai Karate<br>\<a href="http://www.itosukaiireland.org/galway.html">Website</a>', 53.267221, -9.055337], // Itosu kai Karate
+        ['Shotokan Karate<br>\<a href="https://galwayshotokankarate.weebly.com/">Website</a>', 53.276062, -9.071076], // Shotokan Karate
+        ['Atlantic Aikido<br>\<a href="http://www.atlanticaikido.com/">Website</a>', 53.276062, -9.071076], // Atlantic Aikido 
+        ['Boxing<br>\<a href="http://www.galwayboxing.com/">Website</a>', 53.278087, -9.072740], // Boxing
+        ['Chen Tai Chi<br>\<a href="http://www.chentaichiireland.com/">Website</a>', 53.277048, -9.054148], // Chen Tai Chi
+        ['Black Dragon Kickboxing<br>\<a href="http://www.blackdragon.ie/">Website</a>', 53.282709, -9.043010], // Black Dragon Kickboxing
+      ] ;
 
-  var markerCluster = new MarkerClusterer(map, markers, { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
-
-
-}
-
-function martialarts() {
-    var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 12,
-        center: {
-            lat: 53.269172, 
-            lng: -9.080368
-        }
-    });
-
-   var locations = [
-        {lat: 53.264804, lng: -9.083411}, //Kyokushinkai
-        {lat: 53.267221, lng: -9.055337}, // Galway Judo Club
-        {lat: 53.267221, lng: -9.055337}, // Itosu kai Karate
-        {lat: 53.276062, lng: -9.071076}, // Shotokan Karate
-        {lat: 53.276062, lng: -9.071076}, // Atlantic Aikido 
-        {lat: 53.278087, lng: -9.072740}, // Boxing
-        {lat: 53.277048, lng: -9.054148}, // Chen Tai Chi
-        {lat: 53.282709, lng: -9.043010}, // Black Dragon Kickboxing
+var swimmingLocations = [
+        ['Ocean Fitness Leisure Club<br>\<a href="http://oceanfitness.ie/">Website</a>', 53.260107, -9.087778], // Ocean Fitness Leisure Club
+        ['Leisureland<br>\<a href="http://www.leisureland.ie/">Website</a>', 53.260351, -9.082062], // Leisureland
+        ['Kingfisher Club NUIG<br>\<a href="https://nuigalway.kingfisherclub.com/">Website</a>', 53.283302, -9.062668], // Kingfisher Club NUIG
+        ['Ardilaun<br>\<a href="www.ardilaunleisureclub.ie/">Website</a>', 53.269264, -9.079816], // Ardilaun
+        ['The Galmont Hotel & Spa<br>\<a href="https://www.thegalmont.com/en/energize-fitness/">Website</a>', 53.274941, -9.043377], // The Galmont Hotel & Spa
+        ['NRG Health & Fitness Knocknacarra<br>\<a href="https://www.nrgfitness.ie/knocknacarra/">Website</a>', 53.270546, -9.107477], // NRG Health & Fitness Knocknacarra
+        ['NRG Health & Fitness Bohermore<br>\<a href="https://www.nrgfitness.ie/locations/bohermore/">Website</a>', 53.282631, -9.040927], // NRG Health & Fitness Bohermore
+        ['Kingfisher Club Renmore<br>\<a href="https://renmore.kingfisherclub.com/">Website</a>', 53.275735, -9.016226], // Kingfisher Club Renmore
+        ['Active 24 Fitness<br>\<a href="https://activefitness.ie/">Website</a>', 53.280922, -9.021228], // Active 24 Fitness
     ] ;
 
-   var markers = locations.map(function(location) {
-        return new google.maps.Marker({
-            animation: google.maps.Animation.DROP,
-            position: location
-            
-        });
-    });
-
-  var markerCluster = new MarkerClusterer(map, markers, { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
-
-
-}
-
-function swimming() {
-    var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 12,
-        center: {
-            lat: 53.269172, 
-            lng: -9.080368
-        }
-    });
-
-   var locations = [
-        {lat: 53.260107, lng: -9.087778}, // Ocean Fitness Leisure Club
-        {lat: 53.260351, lng: -9.082062}, // Leisureland
-        {lat: 53.283302, lng: -9.062668}, // Kingfisher Club NUIG
-        {lat: 53.269264, lng: -9.079816}, // Ardilaun
-        {lat: 53.274941, lng: -9.043377}, // The Galmont Hotel & Spa
-        {lat: 53.270546, lng: -9.107477}, // NRG Health & Fitness Knocknacarra
-        {lat: 53.282631, lng: -9.040927}, // NRG Health & Fitness Bohermore
-        {lat: 53.275735, lng: -9.016226}, // Kingfisher Club Renmore
-        {lat: 53.280922, lng: -9.021228}, // Active 24 Fitness
+var racketsportLocations = [
+        ['Galway Lawn Tennis Club<br>\<a href="https://gltc.ie/">Website</a>', 53.264421, -9.090292], // Galway Lawn Tennis Club
+        ['Doughiska Tennis Court<br>\<a href="www.health-plus.ie/">Website</a>', 53.286695, -8.984720], // Doughiska Tennis Court
+        ['Oranmore Badminton Club<br>\<a href="https://oranmorebadmintonclub.teamapp.com/">Website</a>', 53.274061, -8.918459], // Oranmore Badminton Club
+        ['Castlegar GAA Club<br>\<a href="http://www.castlegargaa.com/">Website</a>', 53.278005, -8.977520], // Castlegar GAA Club
     ] ;
 
-   var markers = locations.map(function(location) {
-        return new google.maps.Marker({
-            animation: google.maps.Animation.DROP,
-            position: location
-            
-        });
-    });
-
-  var markerCluster = new MarkerClusterer(map, markers, { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
-
-
-}
-
-function racketsports() {
-    var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 12,
-        center: {
-            lat: 53.269172, 
-            lng: -9.080368
-        }
-    });
-
-   var locations = [
-        {lat: 53.264421, lng: -9.090292}, //Galway Lawn Tennis Club
-        {lat: 53.286695, lng: -8.984720}, // Doughiska Tennis Court
-        {lat: 53.274061, lng: -8.918459}, // Oranmore Badminton Club
-        {lat: 53.278005, lng: -8.977520}, // Castlegar GAA Club
+var yogaLocations = [
+        ['Galway Yoga Centre<br>\<a href="https://galwayyoga.com/">Website</a>', 53.272723, -9.053601], // Galway Yoga Centre
+        ['Love Yoga Galway<br>\<a href="http://www.loveyoga.eu/">Website</a>', 53.270644, -9.057939], // Love Yoga Galway
+        ['An Seomra Yoga<br>\<a href="https://anseomrayoga.com/about">Website</a>', 53.270096, -9.060294], // An Seomra Yoga
+        ['Bikram Hot Yoga<br>\<a href="https://hotyoga.ie/">Website</a>', 53.285429, -9.036922], // Bikram Hot Yoga
+        ['Yoga Shala<br>\<a href="https://www.theyogashala.net/">Website</a>', 53.259149, -9.086876], // Yoga Shala
+		['Yoga Roots<br>\<a href="https://www.yogaroots.ie/">Website</a>', 53.267055, -9.072285], // Yoga Roots
+		['Ashtanga Yoga Galway<br>\<a href="https://www.ashtangayogagalway.ie/">Website</a>', 53.265926, -9.131508], // Ashtanga Yoga Galway
     ] ;
 
-   var markers = locations.map(function(location) {
-        return new google.maps.Marker({
-            animation: google.maps.Animation.DROP,
-            position: location
-            
-            
-        });
-    });
-
-  var markerCluster = new MarkerClusterer(map, markers, { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
-
-
-}
-
-function yoga() {
-    var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 12,
-        center: {
-            lat: 53.269172, 
-            lng: -9.080368
-        }
-    });
-
-   var locations = [
-        {lat: 53.272723, lng: -9.053601}, // Galway Yoga Centre
-        {lat: 53.270644, lng: -9.057939}, // Love Yoga Galway
-        {lat: 53.270096, lng: -9.060294}, // An Seomra Yoga
-        {lat: 53.285429, lng: -9.036922}, // Bikram Hot Yoga
-        {lat: 53.259149, lng: -9.086876}, // Yoga Shala
-        {lat: 53.267055, lng: -9.072285}, // Yoga Roots
-        {lat: 53.265926, lng: -9.131508}, // Ashtanga Yoga Galway
+var dietLocations = [
+        ['Cliona Joyce Dietician<br>\<a href="https://www.goldenpages.ie/cliona-joyce-private-dietitian-galway-city-H91/">Website</a>', 53.272727, -9.059276], // Cliona Joyce Dietician
+        ['Niamh Burke Nutrition<br>\<a href="https://niamhburkenutrition.com/">Website</a>', 53.270401, -9.057480], // Niamh Burke Nutrition
+        ['Glenville Nutrition Clinic<br>\<a href="https://glenvillenutrition.ie/">Website</a>', 53.269747, -9.052279], // Glenville Nutrition Clinic
+        ['Milena Dow Nutrition & Weight Loss Specialist<br>\<a href="https://www.milenadow.com/">Website</a>', 53.278413, -9.049624], // Milena Dow Nutrition & Weight Loss Specialist
+        ['Complete Nutrition<br>\<a href="https://completenutrition.com/">Website</a>', 53.283531, -9.036657], // Complete Nutrition
     ] ;
 
-   var markers = locations.map(function(location) {
-        return new google.maps.Marker({
-            animation: google.maps.Animation.DROP,
-            position: location
-            
-            
-        });
-    });
-
-  var markerCluster = new MarkerClusterer(map, markers, { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
-
-
-}
-
-function fitmeals() {
-    var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 12,
-        center: {
-            lat: 53.269172, 
-            lng: -9.080368
-        }
-    });
-
-   var locations = [
-        {lat: 53.293137, lng: -9.015226}, // Meals4Health
-        {lat: 53.235787, lng: -8.871745}, // Clean Cut Meals
+var supplementLocations = [
+        ['Vitamin Shop<br>\<a href="https://www.facebook.com/vitaminshopgalway/">Website</a>', 53.275621, -9.053744], //Vitamin Shop
+        ['Health+<br>\<a href="www.health-plus.ie/">Website</a>', 53.273683, -9.052650], // Health+
+        ['Holland & Barrett<br>\<a href="www.hollandandbarrett.ie">Website</a>', 53.272819, -9.052791], // Holland & Barrett
+        ['Evergreen<br>\<a href="www.evergreen.ie/">Website</a>', 53.280475, -9.047839], // Evergreen
+        ['Apollo Supplements<br>\<a href="www.apollosupplements.ie">Website</a>', 53.285501, -9.034280], // Apollo Supplements
+        ['Evergreen Healthfoods - Eyre Square Centre<br>\<a href="www.evergreen.ie/">Website</a>', 53.273502, -9.049631], // Evergreen
+        ['Evergreen Healthfoods- Galway City Centre<br>\<a href="www.evergreen.ie/">Website</a>', 53.272218, -9.053527], // Evergreen
     ] ;
 
-   var markers = locations.map(function(location) {
-        return new google.maps.Marker({
-            animation: google.maps.Animation.DROP,
-            position: location
-            
-            
-        });
-    });
-
-  var markerCluster = new MarkerClusterer(map, markers, { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
-
-
-}
-
-function diet() {
-    var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 12,
-        center: {
-            lat: 53.269172, 
-            lng: -9.080368
-        }
-    });
-
-   var locations = [
-        {lat: 53.272727, lng: -9.059276}, // Cliona Joyce Dietician
-        {lat: 53.270401, lng: -9.057480}, // Niamh Burke Nutrition
-        {lat: 53.269747, lng: -9.052279}, // Glenville Nutrition Clinic
-        {lat: 53.278413, lng: -9.049624}, // Milena Dow Nutrition & Weight Loss Specialist
-        {lat: 53.283531, lng: -9.036657}, // Complete Nutrition
+ var mealLocations = [
+        ['Clean Cut Meals<br>\<a href="https://www.https://cleancutmeals.ie/">Website</a>', 53.235806, -8.87177], //Clean Cut Meals
+        ['GourmetFuel<br>\<a href="https://gourmetfuel.com/">Website</a>', 53.278211, -6.220271], // GourmetFuel
+        ['Meals4Health<br>\<a href="https://www.meals4health.ie/">Website</a>', 53.293254, -9.015161], // Meals4Health
+        ['Fit4Food<br>\<a href="www.fit4food.ie/">Website</a>', 53.293060, -9.013989], // Fit4Food
     ] ;
- 
-    var markers = locations.map(function(location) {
-        return new google.maps.Marker({
-            animation: google.maps.Animation.DROP,
-            position: location
-            
-            
-        });
-    });
 
-  var markerCluster = new MarkerClusterer(map, markers, { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
+var physioLocations = [
+        ['Baily Point Physiotherapy<br>\<a href="">Website</a>', 53.259660, -9.077878], //Baily Point Physiotherapy
+        ['Galway West Physiotherapy<br>\<a href="">Website</a>', 53.268432, -9.062749], // Galway West Physiotherapy
+        ['Galway Bay Physio-Galway City Centre<br>\<a href="">Website</a>', 53.271860, -9.049521], // Galway Bay Physio- City Centre
+        ['Evidence-Based Therapy Centre<br>\<a href="">Website</a>', 53.274235, -9.045196], // Evidence-Based Therapy Centre
+        ['Galway City Physiotherapy<br>\<a href="">Website</a>', 53.286955, -9.034320], // Galway City Physiotherapy
+        ['Alliance Physiotherapy<br>\<a href="">Website</a>', 53.278312, -9.008287], // Alliance Physiotherapy
+        ['Galway Bay Physio-Oranmore<br>\<a href="">Website</a>', 53.271319, -8.918537], // Galway Bay Physio-Oranmore
+    ] ;
 
+var massageLocations = [
+        ['Darren Macfarlane Physical Theraly Clinic<br>\<a href="">Website</a>', 53.268656, -9.064018], //
+        ['Galway Therapy Clinic<br>\<a href="">Website</a>', 53.271162, -9.056774], // 
+        ['Veras Bodywork & Massage<br>\<a href="">Website</a>', 53.270889, -9.053179], // 
+        ['Massage Therapy Galway<br>\<a href="">Website</a>', 53.270919, -9.053191], //
+        ['Jerome Sports Massage<br>\<a href="">Website</a>', 53.289906, -9.047711], // 
+        ['John Butler Sports Injury / Massage & Chartered Physiotherapist<br>\<a href="">Website</a>', 53.286569, -9.036048], // 
+        ['Muscle Maintenance<br>\<a href="">Website</a>', 53.294049, -9.013728], // Muscle Maintenance
+        ['Peter Forde Physical Injury Therapy Clinic<br>\<a href="">Website</a>', 53.289204, -9.013362], // 
+    ] ;
 
-}
+var acupunctureLocations = [
+        ['<br>\<a href="">Website</a>', 53.235806, -8.87177], //
+        ['<br>\<a href="">Website</a>', 53.278211, -6.220271], // 
+        ['<br>\<a href="">Website</a>', 53.293254, -9.015161], // 
+        ['<br>\<a href="">Website</a>', 53.293060, -9.013989], // 
+    ] ;
 
-function supplement() {
+var chiropractorLocations = [
+        ['<br>\<a href="">Website</a>', 53.235806, -8.87177], //
+        ['<br>\<a href="">Website</a>', 53.278211, -6.220271], // 
+        ['<br>\<a href="">Website</a>', 53.293254, -9.015161], // 
+        ['<br>\<a href="">Website</a>', 53.293060, -9.013989], // 
+    ] ;
+function showLocation(locations) {
   var map = new google.maps.Map(document.getElementById("map"), {
         zoom: 12,
         center: {
@@ -239,16 +126,6 @@ function supplement() {
             lng: -9.080368
         }
     });
-
-     var locations = [
-        ['Vitamin Shop<br>\<a href="https://www.facebook.com/vitaminshopgalway/">Website</a>', 53.275621, -9.053744], //Vitamin Shop
-        ['Health+<br>\<a href="www.health-plus.ie/">Website</a>', 53.273683, -9.052650], // Health+
-        ['Holland & Barrett<br>\<a href="www.hollandandbarrett.ie">Website</a>', 53.272965, -9.052693], // Holland & Barrett
-        ['Evergreen<br>\<a href="www.evergreen.ie/">Website</a>', 53.280849, -9.047839], // Evergreen
-        ['Apollo Supplements<br>\<a href="www.apollosupplements.ie">Website</a>', 53.285501, -9.034280], // Apollo Supplements
-        ['Evergreen<br>\<a href="www.evergreen.ie/">Website</a>', 53.276324, -9.076640], // Evergreen
-        ['Evergreen<br>\<a href="www.evergreen.ie/">Website</a>', 53.272677, -9.053797], // Evergreen
-    ] ;
 
 var infowindow =  new google.maps.InfoWindow({});
 var marker, count;
