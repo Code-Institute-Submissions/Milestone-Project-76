@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="/assets/wireframes/devices.png">
+</p>
 <h1>Milestone Project 2: Interactive Frontend Development</h1>
 For this second milestone project, I decided to build this  website as an avid fitness enthusiast. I have always been into all thing's gym, nutrition and recuperation related and often google new activities, sources of nutrition and sports massage etc. in my area.
 I believed a website where all these sources could be found at a glance would be useful for Galway City where I currently live.
@@ -95,7 +98,7 @@ Also the project was developed with the constant use of Chrome Developer Tools i
 2. Map
 
     - Clicking on the links drops the markers onto the Map in the correct locations.
-    - Using the Google map zoom function moved the map in and out without adn the Markers held their locations accurately
+    - Using the Google map zoom function moved the map in and out without and the Markers held their locations accurately
    	- Click on links to websites on the infowindow of markers to ensure all links bring you to correct website.
     - The websites open in another tab so the user can remain on the GALFIT website at all times
 
