@@ -1,3 +1,4 @@
+//Init map. center set to Galway City. 
 function initMap() {
 	var map = new google.maps.Map(document.getElementById("map"), {
 		zoom: 12,
@@ -7,6 +8,9 @@ function initMap() {
 		}
 	});
 }
+
+// Fitness, Dieticians and Recuperation locations and their website links
+
 var bodybuildingLocations = [
 	['Ardilaun<br>\<a href="www.ardilaunleisureclub.ie/" target="_blank">Website</a>', 53.269172, -9.080368], // Ardilaun
 	['Kingfisher<br>\<a href="https://nuigalway.kingfisherclub.com/" target="_blank">Website</a>', 53.281736, -9.063121], // Kingfisher
@@ -116,6 +120,7 @@ var chiropractorLocations = [
 	['Salthill Osteopathic Clinic - Galway<br>\<a href="http://www.osteopathgalway.ie/">Website</a>', 53.261025, -9.077299], // Salthill Osteopathic Clinic - Galway
 ];
 
+// Function to run in ariables above based on users selection.
 function showLocation(locations) {
 	var map = new google.maps.Map(document.getElementById("map"), {
 		zoom: 12,
